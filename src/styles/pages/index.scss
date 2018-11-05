@@ -1,8 +1,16 @@
 .main-container {
   p {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .text-left {
+    text-align: left;
   }
 
   .title-container {
@@ -33,12 +41,8 @@
     color: white;
     text-align: center;
 
-    h2 {
-      font-size: 36px;
-    }
-
-    p {
-      font-size: 24px;
+    img {
+      margin-bottom: 3em;
     }
   }
 
@@ -75,6 +79,7 @@
       h3 {
         color: white;
       }
+
       p {
         color: #BEBFC1;
         font-size: 16px;
@@ -86,10 +91,6 @@
 
   .contact {
     text-align: center;
-    h2 {
-      font-size: 40px;
-    }
-
     input {
       outline: 0;
       padding: 0.7em;
@@ -98,6 +99,11 @@
       border-radius: 0.2em;
       border: 1px solid #BEBFC1;
     }
+  }
+
+  .about {
+    text-align: center;
+    background-color: #ECECEC;
   }
 
 }

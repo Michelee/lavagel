@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import TextLoop from 'react-text-loop'
 
 import Layout from '../components/ui/layout'
 import Image from '../components/ui/image'
@@ -25,7 +25,12 @@ const IndexPage = () => (
     <div className="main-container">
       <div className="title-container">
         <h1>LavaGel</h1>
-        <p>The World’s First – Safe, Controllable, and Natural Self-Heating Technology.</p>
+        <p>The World’s First – Safe, Controllable,and Natural Self-Heating Technology.</p>
+        <TextLoop mask>
+          <p>Reversing the signs of aging.</p>
+          <p>Making medical needles a thing of the past.</p>
+          <p>Serving oven fresh food, 2 hours after it leaves the oven.</p>
+        </TextLoop>
         <div className="btn-container">
           <Button
             label="Watch video"
@@ -33,13 +38,16 @@ const IndexPage = () => (
         </div>
       </div>
       <div id="product" className="product section">
-        <h2>Lorem ipsum dolor</h2>
-        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut <br /> labore et dolore magna aliqua. Ut enim ad minim veniam,
-          nostrud <br />exercitation ullamco ex ea commodo consequat.</p>
+        <h2>Welcome to mineral energy</h2>
+        <p>Lava Gel is a flame-free heat engine, comprised of food-grade minerals from the earth and sea, that when combined, produce a controlled, instant source of sustained spot heat.  Anytime.  Anywhere. Any industry.</p>
         <img src={LavagelProductImg} alt="lavagel-prod" />
+        <h2>4 Minerals.  90+ Patents.  Unlimited Possibilities.</h2>
+        <p>Lava Gel’s heating properties are a result of a natural mineral reaction.  When combined with water, the minerals react immediately, safely heating the application for a pre-determined duration and temperature – 30 minutes to 4 hours, from room temperature to over 200°.  The minerals used in Lava Gel’s proprietary heating engine are completely controllable, formulated to the needs of the specific industry and application.</p>
+        <p className="text-left"><strong>SAFE.</strong> Not only is mineral energy flame-free, the compound itself is made from food-grade, environmentally friendly minerals making it safe in countless applications, from consumer products to medical devices.</p>
+        <p className="text-left"><strong>PORTABLE.</strong> Our unique self-heating applications are completely portable and lightweight, requiring absolutely no electricity, batteries or cords.</p>
+        <p className="text-left"><strong>VERSATILE.</strong> From food, medical, beauty, and beyond, Lava Gel’s technology has the power to solve age-old problems and change the lives everyday people.</p>
       </div>
-      <div id="application" className="applications section">
+      <div name="application" className="applications section">
         {
           applicationsItems.map((item, index) => (
             <div className={`application-item 
@@ -53,7 +61,11 @@ const IndexPage = () => (
           ))
         }
       </div>
-      <div id="contact" className="contact section">
+      <div name="about" className="about section">
+        <h2>We’re on a mision</h2>
+        <p>Lava Gel is a privately held company based in Las Vegas, NV.  We’re comprised of a diverse group of ambitious scientists, manufacturers, marketers, and industry veterans who are all dedicated to using mineral energy to transform the world we live in.  We believe bringing a safe, reliable heating source to everyday applications, from medical devices to food and beverage and everything in between is long overdue.  It’s this challenge that drives us every day.  And we wouldn’t have it any other way.</p>
+      </div>
+      <div name="contact" className="contact section">
         <h2>Contact Us</h2>
         <p>Consectetur adipiscing elit, sed do eiusmod tempor <br /> 
           incididunt ut labore et dolore magna aliqua.</p>
