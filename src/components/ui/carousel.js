@@ -15,6 +15,7 @@ class ReactSlickDemo extends Component {
       arrow: true,
       infinite: true,
       speed: 1000,
+      autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1
     };
