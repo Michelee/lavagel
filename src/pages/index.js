@@ -2,7 +2,6 @@ import React from 'react'
 import TextLoop from 'react-text-loop'
 
 import Layout from '../components/ui/layout'
-import Image from '../components/ui/image'
 import Button from '../components/ui/button'
 import LavagelProductImg from '../images/lavagel-product-img.jpg'
 import Application1 from '../images/application-1.png'
@@ -23,7 +22,7 @@ const applicationsItems = [
 const IndexPage = () => (
   <Layout>
     <div className="main-container">
-      <div className="title-container">
+      <div name="home" className="title-container">
         <h1>LavaGel</h1>
         <p>The World’s First – Safe, Controllable,and Natural Self-Heating Technology.</p>
         <TextLoop mask>
@@ -37,7 +36,7 @@ const IndexPage = () => (
           />
         </div>
       </div>
-      <div id="product" className="product section">
+      <div name="product" className="product section">
         <h2>Welcome to mineral energy</h2>
         <p>Lava Gel is a flame-free heat engine, comprised of food-grade minerals from the earth and sea, that when combined, produce a controlled, instant source of sustained spot heat.  Anytime.  Anywhere. Any industry.</p>
         <img src={LavagelProductImg} alt="lavagel-prod" />

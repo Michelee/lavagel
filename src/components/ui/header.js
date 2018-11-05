@@ -1,20 +1,27 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'react-scroll'
 import PropTypes from 'prop-types'
 import Logo from '../icons/lavagel-logo'
 import '../../styles/ui/header.scss'
 
+const scrollConfig = {
+  spy: true,
+  smooth: true,
+  duration: 1000
+}
+
 const Header = ({ addClass }) => (
   <div className={`header-container ${addClass}`}>
     <div className="header-content">
-      <Link to="/" >
+      <Link to="home" {...scrollConfig}>
         <Logo />
       </Link>
       <div className="menu">
-        <Link to="#product">Product</Link>
-        <Link to="#application">Application</Link>
-        <Link to="#about">About</Link>
-        <Link to="#contact">Contact Us</Link>        
+        <Link to="home" {...scrollConfig}>Home</Link>
+        <Link to="product" {...scrollConfig}>Product</Link>
+        <Link to="application" {...scrollConfig}>Application</Link>
+        <Link to="about" {...scrollConfig}>About</Link>
+        <Link to="contact" {...scrollConfig}>Contact Us</Link>        
       </div>
     </div>
   </div>
