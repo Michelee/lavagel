@@ -1,0 +1,100 @@
+.main-container {
+  p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .title-container {
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: bottom;
+    background-image: linear-gradient(rgba(7, 7, 7, 0.2), rgba(0, 1, 2, 1)), url("../../images/bgLavagel.jpg");
+    margin-top: -90px;
+    padding: 10em 0;
+
+    .btn-container {
+      width: 100%;
+      margin: 4em auto 0;
+    }
+
+    h1 {
+      font-size: 55px;
+    }
+  }
+
+  .section {
+    padding: 4em 7em;
+  }
+
+  .product {
+    background: black;
+    color: white;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .applications {
+    .application-item {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+
+      &.inverse {
+        flex-direction: row-reverse;
+
+        .application-info {
+          text-align: right;
+          align-items: flex-end;
+        }
+      }
+    }
+
+    img {
+      margin-bottom: 0;
+      filter: grayscale(100%);
+    }
+
+    .application-info {
+      max-width: 460px;
+      background: black;
+      padding: 2em;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        color: white;
+      }
+      p {
+        color: #BEBFC1;
+      }
+    }
+  }
+
+  .contact {
+    text-align: center;
+    h2 {
+      font-size: 40px;
+    }
+
+    input {
+      outline: 0;
+      padding: 0.7em;
+      width: 500px;
+      margin-right: 0.5em;
+      border-radius: 0.2em;
+      border: 1px solid #BEBFC1;
+    }
+  }
+
+}

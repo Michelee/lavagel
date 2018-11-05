@@ -1,0 +1,63 @@
+.footer-container {
+  background-size: cover;
+  background-position: bottom;
+  background-image: linear-gradient(rgba(7, 7, 7, 0.2), rgba(0, 1, 2, 1)), url("../../images/bgLavagel.jpg");
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+
+  .lavagel-icon {
+    width: 200px;
+    height: auto;
+  }
+
+  .footer-content {
+    padding: 2em 7em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .social-media-icons {
+    svg {
+      margin: 0 8px;
+    }
+  }
+
+  hr {
+    margin-bottom: 0;
+    background: white;
+    margin: 0 3em;
+  }
+
+  .info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .info-box {
+      margin: 5em 2em;
+      width: 300px;
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: black;
+      padding: 1em 0;
+
+      span, a {
+        margin-top: 1em;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
