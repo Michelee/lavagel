@@ -3,6 +3,7 @@ import TextLoop from 'react-text-loop'
 
 import Layout from '../components/ui/layout'
 import Button from '../components/ui/button'
+import Carousel from '../components/ui/carousel'
 import LavagelProductImg from '../images/lavagel-product-img.jpg'
 import Application1 from '../images/application-1.png'
 import Application2 from '../images/application-2.png'
@@ -23,18 +24,12 @@ const IndexPage = () => (
   <Layout>
     <div className="main-container">
       <div name="home" className="title-container">
-        <h1>LavaGel</h1>
-        <p>The World’s First – Safe, Controllable,and Natural Self-Heating Technology.</p>
-        <TextLoop mask>
-          <p>Reversing the signs of aging.</p>
-          <p>Making medical needles a thing of the past.</p>
-          <p>Serving oven fresh food, 2 hours after it leaves the oven.</p>
-        </TextLoop>
-        <div className="btn-container">
+        <Carousel />
+        {/* <div className="btn-container">
           <Button
             label="Watch video"
           />
-        </div>
+        </div> */}
       </div>
       <div name="product" className="product section">
         <h2>Welcome to mineral energy</h2>
