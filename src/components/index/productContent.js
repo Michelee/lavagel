@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import LavagelProductImg from '../../images/lavagel-product-img.jpg'
 import SafeIcon from '../../components/icons/safe-icon'
 import PortableIcon from '../../components/icons/portable-icon'
 import VersatileIcon from '../../components/icons/versatile-icon'
 
 const ProductContent = () => (
-  <Fragment>
-    <div name="product" className="product section">
+  <div name="product">
+    <div  className="product section">
       <h2>Welcome to mineral energy</h2>
       <p>Lava Gel is a flame-free heat engine, comprised of food-grade minerals from the earth and sea, that when combined, produce a controlled, instant source of sustained spot heat. Anytime. Anywhere. Any industry.</p>
     </div>
@@ -31,7 +31,7 @@ const ProductContent = () => (
         </div>
       </div>
     </div>
-  </Fragment>
+  </div>
 )
 
 export default ProductContent;
