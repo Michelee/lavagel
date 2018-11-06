@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import LavagelImg from '../../images/bgLavagel.jpg'
+import LavagelImg from '../../images/main-bg.png'
 import AgingImg from '../../images/anti-aging-img.jpg'
 import MedicalImg from '../../images/medical-img.jpg'
 import BuffetImg from '../../images/buffet-img.jpg'
+import Button from '../../components/ui/button'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "../../styles/ui/carousel.scss"
@@ -32,10 +33,17 @@ class ReactSlickDemo extends Component {
         <Slider {...settings}>
           {
             slides.map((item, index) => (
-              <div className="carousel-item" key={item.index}>
+              <div className="carousel-item" key={index}>
                 <img src={item.image} alt="carousel0" />
                 <div className="carousel-text">
-                  <span className="place">{item.title}</span>      
+                  <span className="place">{item.title}</span>
+                  {
+                    index === 0
+                    ? <Button
+                      label="Watch video"
+                      url="/" />
+                    : ''
+                  }     
                 </div>   
               </div>
             ))

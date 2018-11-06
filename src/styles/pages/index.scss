@@ -16,10 +16,7 @@
   .title-container {
     text-align: center;
     color: white;
-    background-size: cover;
-    background-position: bottom;
-    background-image: linear-gradient(rgba(7, 7, 7, 0.2), rgba(0, 1, 2, 1)), url("../../images/bgLavagel.jpg");
-    // padding: calc(10em + 71px) 0 7em;
+    background: #000;
     margin-top: -71px;
 
     .btn-container {
@@ -33,7 +30,7 @@
   }
 
   .section {
-    padding: calc(4em + 71px) 7em 4em;
+    padding: calc(1em + 71px) 7em 4em;
   }
 
   .product {
@@ -41,16 +38,75 @@
     color: white;
     text-align: center;
 
+    p {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .inline-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    &.grey-box {
+      background-color: #EBEBEB;
+
+      h2 {
+        color: #6D6E71;
+      }
+
+      p {
+        color: #939598;
+      }
+
+      .inline-content {
+        margin-top: 3em;
+      }
+
+      .product-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2em;
+
+        strong {
+          color: #6D6E71;
+          text-transform: uppercase;
+          margin: 1em 0;
+          font-size: 24px;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+
     img {
-      margin-bottom: 3em;
+      width: 55%;
+      margin-bottom: 0;
     }
   }
 
   .applications {
+    h2 {
+      color: #58595B;
+      text-align: center;
+    }
     .application-item {
       max-width: 920px;
       margin: 0 auto;
       display: flex;
+
+      &:last-child,
+      &:nth-child(3),
+      &:nth-child(7) {
+        margin-bottom: 2em;
+      }
 
       &.inverse {
         flex-direction: row-reverse;
@@ -77,12 +133,14 @@
 
       h3 {
         color: white;
+        font-size: 24px;
+        text-transform: uppercase;
       }
 
       p {
-        color: #BEBFC1;
-        font-size: 16px;
-        line-height: 20px;
+        color: #BCBEC0;
+        font-size: 22px;
+        line-height: initial;
         margin-bottom: 0;
       }
     }
@@ -90,6 +148,10 @@
 
   .contact {
     text-align: center;
+
+    h2 {
+      font-size: 48px;
+    }
     input {
       outline: 0;
       padding: 0.7em;
@@ -102,7 +164,18 @@
 
   .about {
     text-align: center;
-    background-color: #ECECEC;
+    background-color: #EBEBEB;
+
+    h2 {
+      color: #6D6E71;
+      font-size: 48px;
+    }
+
+    p {
+      max-width: 1200px;
+      color: #939598;
+      margin: 0 auto;
+    }
   }
 
 }
