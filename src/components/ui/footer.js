@@ -18,7 +18,7 @@ const Footer = () => (
       </div>
       <div className="info-box">
         <MailIcon />
-        <a href="mailto:heretohelp@lavagelusa.com">heretohelp@lavagelusa.com</a>
+        <a href="mailto:heretohelp@lavagelusa.com">Support</a>
       </div>
       <div className="info-box">
         <PhoneIcon />

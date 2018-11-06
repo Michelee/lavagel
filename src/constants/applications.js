@@ -1,8 +1,8 @@
-import Application1 from '../images/application-1.png'
-import Application2 from '../images/application-2.png'
+import Application1 from '../images/application-1.jpg'
+import Application2 from '../images/application-2.jpg'
 import Application3 from '../images/application-3.png'
-import Application4 from '../images/application-4.png'
-import Application5 from '../images/application-5.png'
+import Application4 from '../images/application-4.jpg'
+import Application5 from '../images/application-5.jpg'
 import Application6 from '../images/application-6.png'
 import Application7 from '../images/application-7.png'
 

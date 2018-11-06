@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
 import LavagelImg from '../../images/main-bg.png'
-import AgingImg from '../../images/anti-aging-img.jpg'
-import MedicalImg from '../../images/medical-img.jpg'
-import BuffetImg from '../../images/buffet-img.jpg'
+import AgingImg from '../../images/anti-aging-img.png'
+import MedicalImg from '../../images/medical-img.png'
+import BuffetImg from '../../images/buffet-img.png'
 import Video from '../../images/video.gif'
 import Button from '../../components/ui/button'
 import "slick-carousel/slick/slick.css"; 
@@ -24,9 +24,9 @@ class ReactSlickDemo extends Component {
 
     var slides = [
       {"title": "The World’s First – Safe, Controllable, and Natural Self-Heating Technology", "image": Video},
-      {"title": "Reversing the signs of aging", "image": AgingImg},
-      {"title": "Making medical needles a thing of the past", "image": MedicalImg},
-      {"title": "Serving oven fresh food, 2 hours after it leaves the oven.", "image": BuffetImg}      
+      {"title": "Using Lava Gel to help reverse the signs of aging", "image": AgingImg},
+      {"title": "Lava Gel helps make needles a thing of the past", "image": MedicalImg},
+      {"title": "Heating up the Food Industry", "image": BuffetImg}      
     ]
 
     return (

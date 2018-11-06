@@ -6,7 +6,7 @@ import VersatileIcon from '../../components/icons/versatile-icon'
 
 const ProductContent = () => (
   <div name="product">
-    <div  className="product section">
+    <div  className="product img-bg section">
       <h2>Welcome to mineral energy</h2>
       <p>Lava Gel is a flame-free heat engine, comprised of food-grade minerals from the earth and sea, that when combined, produce a controlled, instant source of sustained spot heat. Anytime. Anywhere. Any industry.</p>
     </div>

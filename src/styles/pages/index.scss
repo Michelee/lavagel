@@ -34,7 +34,13 @@
   }
 
   .product {
-    background: black;
+    &.img-bg {
+      background-image: url("../../images/products-bg.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
     color: white;
     text-align: center;
 
