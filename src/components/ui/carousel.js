@@ -4,6 +4,7 @@ import LavagelImg from '../../images/main-bg.png'
 import AgingImg from '../../images/anti-aging-img.jpg'
 import MedicalImg from '../../images/medical-img.jpg'
 import BuffetImg from '../../images/buffet-img.jpg'
+import Video from '../../images/video.gif'
 import Button from '../../components/ui/button'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -22,7 +23,7 @@ class ReactSlickDemo extends Component {
     };
 
     var slides = [
-      {"title": "The World’s First – Safe, Controllable, and Natural Self-Heating Technology", "image": LavagelImg},
+      {"title": "The World’s First – Safe, Controllable, and Natural Self-Heating Technology", "image": Video},
       {"title": "Reversing the signs of aging", "image": AgingImg},
       {"title": "Making medical needles a thing of the past", "image": MedicalImg},
       {"title": "Serving oven fresh food, 2 hours after it leaves the oven.", "image": BuffetImg}      
