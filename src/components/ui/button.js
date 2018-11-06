@@ -3,11 +3,11 @@ import { Link } from 'gatsby'
 import '../../styles/ui/button.scss'
 
 const Button = props => (
-  <Link
-    to={props.url}
+  <button
+    type='submit'
     className={`btn ${props.addClass}`}>
     {props.label}
-  </Link>
+  </button>
 )
 
 export default Button;

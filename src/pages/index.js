@@ -25,12 +25,17 @@ const IndexPage = () => (
         <h2>Contact Us</h2>
         <p>Consectetur adipiscing elit, sed do eiusmod tempor <br /> 
           incididunt ut labore et dolore magna aliqua.</p>
-        <div className="contact-form">
-          <input type="text" placeholder="Enter email address" />
-          <Button 
-            label="Subscribe"
-          />
-        </div>
+          <form action="https://lavagelusa.us19.list-manage.com/subscribe/post?u=d33952fceab5342823408db34&amp;id=41139b8770" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+            <div className="contact-form">
+              <input id="mce-EMAIL" type="email" name="EMAIL" type="text" placeholder="Enter email address" required/>
+              <Button
+                label="Subscribe"
+              />
+            </div>
+            <div style={{'position': 'absolute', 'left': '-5000px'}} aria-hidden="true">
+              <input type="text" name="b_d33952fceab5342823408db34_41139b8770" tabindex="-1" value="" />
+            </div>
+          </form>
       </div>
     </div>
   </Layout>
