@@ -18,7 +18,7 @@ const Header = ({ addClass }) => (
       </Link>
       <div className="menu">
         <Link to="home" {...scrollConfig}>Home</Link>
-        <Link to="product" {...scrollConfig}>Product</Link>
+        <Link to="product" {...scrollConfig}>Technology</Link>
         <Link to="application" {...scrollConfig}>Applications</Link>
         <Link to="about" {...scrollConfig}>About</Link>
         <Link to="contact" {...scrollConfig}>Contact Us</Link>        

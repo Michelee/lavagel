@@ -16,17 +16,17 @@ class ReactSlickDemo extends Component {
       dots: false,
       arrow: true,
       infinite: true,
-      speed: 1000,
+      speed: 3000,
       autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1
     };
 
     var slides = [
-      {"title": "The World’s First – Safe, Controllable, and Natural Self-Heating Technology", "image": Video},
-      {"title": "Using Lava Gel to help reverse the signs of aging", "image": AgingImg},
-      {"title": "Lava Gel helps make needles a thing of the past", "image": MedicalImg},
-      {"title": "Heating up the Food Industry", "image": BuffetImg}      
+      {"title": "The World’s First Safe, Reliable and Controllable Self-Heating Technology", "image": Video},
+      {"title": "Using Lava Gel to Help Reverse the Signs of Aging", "image": AgingImg},
+      {"title": "Lava Gel Helps Make Medical Needles a Thing of the Past", "image": MedicalImg},
+      {"title": "Lava Gel is Heating Up the Food Industry", "image": BuffetImg}      
     ]
 
     return (

@@ -14,7 +14,7 @@ const Footer = () => (
     <div className="info-container">
       <div className="info-box">
         <PlaceIcon />
-        <span>111 corporate park drive, <br />henderson, nv 89074</span>
+        <span>6744 Spencer St., <br />Las Vegas, NV 89119</span>
       </div>
       <div className="info-box">
         <MailIcon />
