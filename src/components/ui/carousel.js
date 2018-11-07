@@ -40,11 +40,10 @@ class ReactSlickDemo extends Component {
                   <span className="place">{item.title}</span>
                   {
                     index === 0
-                    ? <Button
-                      label="Watch video"
-                      url="/" />
+                    ? <a className="btn" target="_blank"
+                      href="https://www.youtube.com/watch?v=dywktyp-cNI">Watch video</a>
                     : ''
-                  }     
+                  }
                 </div>   
               </div>
             ))
