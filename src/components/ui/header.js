@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-scroll'
 import PropTypes from 'prop-types'
 import Logo from '../icons/lavagel-logo'
@@ -11,25 +11,46 @@ const scrollConfig = {
   duration: 1000
 }
 
-const Header = ({ addClass, showMenu }) => (
-  <div className="header-container">
-    <div className="header-content">
-      <a className="menu-icon-btn" onCLick={showMenu}>
-        <MenuIcon />
-      </a>
-      <Link to="home" {...scrollConfig}>
-        <Logo />
-      </Link>
-      <div className={`menu ${addClass}`}>
-        <Link to="home" {...scrollConfig}>Home</Link>
-        <Link to="product" {...scrollConfig}>Technology</Link>
-        <Link to="application" {...scrollConfig}>Applications</Link>
-        <Link to="about" {...scrollConfig}>About</Link>
-        <Link to="contact" {...scrollConfig}>Contact Us</Link>        
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggle: false
+    }
+    this.handleToggle = this.handleToggle.bind(this);
+  }
+
+  handleToggle () {
+    const toggle = this.state.toggle
+    this.setState({
+      toggle: !toggle
+    })
+  }
+
+  render () {
+    const { toggle } = this.state;
+    return (
+      <div className="header-container">
+        <div className="header-content">
+          <a className="menu-icon-btn" onClick={this.handleToggle}>
+            <MenuIcon />
+          </a>
+          <Link to="home" {...scrollConfig}>
+            <Logo />
+          </Link>
+          <div className={`menu ${toggle ? 'show' : 'hide'}`}>
+            
+            <Link to="home" {...scrollConfig}>Home</Link>
+            <Link to="product" {...scrollConfig}>Technology</Link>
+            <Link to="application" {...scrollConfig}>Applications</Link>
+            <Link to="about" {...scrollConfig}>About</Link>
+            <Link to="contact" {...scrollConfig}>Contact Us</Link>        
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-)
+    )
+  }
+}
 
 Header.propTypes = {
   addClass: PropTypes.string,
