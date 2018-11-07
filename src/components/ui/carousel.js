@@ -17,13 +17,13 @@ class ReactSlickDemo extends Component {
       arrow: true,
       infinite: true,
       speed: 2500,
-      // autoplay: true,
+      autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1
     };
 
     var slides = [
-      {"title": "The World’s First Safe, Reliable and Controllable Self-Heating Technology", "image": Video},
+      {"title": "The World's First Safe, Reliable and Controllable Self-Heating Technology", "image": Video},
       {"title": "Using Lava Gel to Help Reverse the Signs of Aging", "image": AgingImg},
       {"title": "Lava Gel Helps Make Medical Needles a Thing of the Past", "image": MedicalImg},
       {"title": "Lava Gel is Heating Up the Food Industry", "image": BuffetImg}      
@@ -33,9 +33,14 @@ class ReactSlickDemo extends Component {
       <div className="container carousel-container">
         <Slider {...settings}>
           {
-            slides.map((item, index) => (
+            slides.map((item, index) => {
+              const styles = {
+                backgroundImage: `url(${item.image})`
+              }
+              return (
               <div className="carousel-item" key={index}>
-                <img src={item.image} alt="carousel0" />
+                <div style={styles} className="carousel-image"></div>
+                {/* <img src={item.image} alt="carousel0" /> */}
                 <div className="carousel-text">
                   <span className="place">{item.title}</span>
                   {
@@ -46,7 +51,7 @@ class ReactSlickDemo extends Component {
                   }
                 </div>   
               </div>
-            ))
+            )})
           }
         </Slider>
       </div>

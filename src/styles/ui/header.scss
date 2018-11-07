@@ -21,61 +21,51 @@
       justify-content: space-between;
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 768px){
       margin: 0;
       justify-content: center;
     }
 
     .menu-icon-btn {
       position: absolute;
-      left: 2em;
+      left: 1em;
       cursor: pointer;
 
-      @media screen and (min-width: 501px){
+      @media screen and (min-width: 769px){
         display: none;
       }
     }
   }
 
   .lavagel-icon {
-    width: 250px;
+    width: 160px;
     height: auto;
-
-    @media screen and (max-width: 768px){
-      width: 160px;
-      height: auto;
-    }
   }
 
   a {
     cursor: pointer;
   }
 
-  // .menu-icon-btn {
-  //   display: none;
-  // }
-
-
   .menu {
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       display: none;
-    }
 
-    &.show {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      background: black;
-      left: 0;
-      top: 50px;
-      width: 100%;
-      padding: 0 1em;
-      line-height: 2em;
-      padding: 0 1em 1.5em;
-    }
+      &.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: black;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        padding: 0 1em;
+        line-height: 2em;
+        padding: 0 1em 1.5em;
+      }
 
-    &.hide {
-      display: none;
+      &.hide {
+        display: none;
+      }
     }
   }
 

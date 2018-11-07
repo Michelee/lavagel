@@ -55,5 +55,21 @@
     text-transform: capitalize;
     line-height: initial;
     max-width: 80%;
+
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 30px;
+    }
+  }
+
+  .carousel-item {
+    .carousel-image {
+      background-size: cover;
+      height: 100vh;
+      background-position: center;
+    }
   }
 }

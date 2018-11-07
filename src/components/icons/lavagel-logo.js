@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Logo = () => ( 
-    <svg width="248px" height="29px" viewBox="0 0 248 29">
+    <svg width="248px" className="lavagel-icon" height="29px" viewBox="0 0 248 29">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
             <g id="lavagel250" fill="#FFFFFF">
                 <g id="XMLID_47_">
