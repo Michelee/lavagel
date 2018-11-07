@@ -177,10 +177,18 @@
       font-size: 48px;
     }
 
+    .inline-content {
+      display: flex;
+      align-items: center;
+      margin-top: 3em;
+    }
+
     p {
+      width: 50%;
       max-width: 1200px;
       color: #939598;
-      margin: 0 auto;
+      margin-left: 2em;
+      text-align: justify;
     }
   }
 
