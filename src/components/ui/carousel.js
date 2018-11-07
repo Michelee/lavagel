@@ -16,8 +16,8 @@ class ReactSlickDemo extends Component {
       dots: false,
       arrow: true,
       infinite: true,
-      speed: 3000,
-      autoplay: true,
+      speed: 2500,
+      // autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1
     };
@@ -30,7 +30,7 @@ class ReactSlickDemo extends Component {
     ]
 
     return (
-      <div className="container">
+      <div className="container carousel-container">
         <Slider {...settings}>
           {
             slides.map((item, index) => (

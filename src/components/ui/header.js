@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import PropTypes from 'prop-types'
 import Logo from '../icons/lavagel-logo'
+import MenuIcon from '../icons/menu-icon'
 import '../../styles/ui/header.scss'
 
 const scrollConfig = {
@@ -10,13 +11,16 @@ const scrollConfig = {
   duration: 1000
 }
 
-const Header = ({ addClass }) => (
-  <div className={`header-container ${addClass}`}>
+const Header = ({ addClass, showMenu }) => (
+  <div className="header-container">
     <div className="header-content">
+      <a className="menu-icon-btn" onCLick={showMenu}>
+        <MenuIcon />
+      </a>
       <Link to="home" {...scrollConfig}>
         <Logo />
       </Link>
-      <div className="menu">
+      <div className={`menu ${addClass}`}>
         <Link to="home" {...scrollConfig}>Home</Link>
         <Link to="product" {...scrollConfig}>Technology</Link>
         <Link to="application" {...scrollConfig}>Applications</Link>

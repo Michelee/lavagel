@@ -5,6 +5,7 @@ import Layout from '../components/ui/layout'
 import Button from '../components/ui/button'
 import Carousel from '../components/ui/carousel'
 import OurStoryImg from '../images/our-story.png'
+import Video from '../images/video.gif'
 
 import ProductContent from '../components/index/productContent'
 import ApplicationsContent from '../components/index/applicationContent'
@@ -15,6 +16,10 @@ const IndexPage = () => (
     <div className="main-container">
       <div name="home" className="title-container">
         <Carousel />
+        <div className="responsive-header">
+          <img src={Video} />
+          <h1>The World’s First Safe, Reliable and Controllable Self-Heating Technology</h1>
+        </div>
       </div>
       <ProductContent />
       <ApplicationsContent />

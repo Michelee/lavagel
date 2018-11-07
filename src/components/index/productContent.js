@@ -15,18 +15,24 @@ const ProductContent = () => (
       <p>Lava Gel’s heating properties are a result of a natural mineral reaction. When combined with water, safely heating the application for a pre-determined duration and temperature – 30 minutes to 4 hours, from room temperature to over 200°. </p>
       <div className="inline-content">
         <div className="product-box">
-          <SafeIcon />
-          <strong className="title">Safe</strong>
+          <div>
+            <SafeIcon /><br />
+            <strong className="title">Safe</strong>
+          </div>
           <p>The compound itself is made from food-grade, friendly minerals making it safe in countless applications.</p>
         </div>
         <div className="product-box">
-          <PortableIcon />
-          <strong className="title">Portable</strong>
+          <div>
+            <PortableIcon /><br />
+            <strong className="title">Portable</strong>
+          </div>
           <p>Our unique self-heating applications are completely portable and require no electricity, batteries or cords.</p>
         </div>
         <div className="product-box">
-          <VersatileIcon />
-          <strong className="title">Versatile</strong>
+          <div>
+            <VersatileIcon /><br />
+            <strong className="title">Versatile</strong>
+          </div>
           <p>Lava Gel’s technology has the power to solve age-old problems and change the lives everyday people.</p>
         </div>
       </div>
